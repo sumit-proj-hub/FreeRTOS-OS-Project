@@ -1,5 +1,3 @@
-# Mid Evaluation Report
-
 ## Real Time Operating System
 A Real-Time Operating System (RTOS) is a specialized operating system designed to manage tasks that must execute within strict timing constraints. Unlike general-purpose operating systems (GPOS) like Windows or Linux, which prioritize multitasking and user interaction, an RTOS focuses on predictability and determinism, ensuring that critical operations occur precisely when needed.
 
