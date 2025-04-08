@@ -224,3 +224,89 @@ target_link_libraries(your_project PRIVATE freertos_kernel)
 - FreeRTOS kernel structure
 - IPC verification research
 - Task visualization tools
+
+# FreeRTOS Demo – Function Documentation
+
+This is a sample demo project using FreeRTOS. The functions implemented here are used for basic testing and monitoring of tasks.
+
+---
+
+## `void vHelloWorldTask(void *pvParameters)`
+
+### Description
+A basic FreeRTOS task that continuously prints a greeting message to the console.
+
+### Parameters
+- `pvParameters`: A pointer to a string representing the name of the task. It is cast to `const char*` internally.
+
+### Behavior
+- Prints `Hello from task <task_name>` every 1000 milliseconds (1 second).
+- Uses `vTaskDelay()` to implement the delay.
+- Runs indefinitely within an infinite loop.
+
+### Role
+- Demonstrates basic task creation and periodic execution in FreeRTOS.
+- Useful for testing multi-tasking behavior by creating multiple instances with different names.
+
+---
+
+## `void print_task_states(void)`
+
+### Description
+Prints the current state and resource usage statistics of all active tasks in the FreeRTOS system.
+
+### Parameters
+- None.
+
+### Behavior
+- Retrieves the number of tasks with `uxTaskGetNumberOfTasks()`.
+- Dynamically allocates memory to store task status information.
+- Uses `uxTaskGetSystemState()` to fill the status array.
+- Iterates through each task and prints:
+  - Task name
+  - Task state (`Running`, `Ready`, `Blocked`, `Suspended`, `Deleted`, `Unknown`)
+  - Priority
+  - Stack high water mark
+
+### Role
+- Provides runtime visibility into system tasks.
+- Useful for debugging, diagnostics, and monitoring FreeRTOS task behavior.
+
+---
+
+## `void vMonitorTask(void *pvParameters)`
+
+### Description
+A task that periodically invokes `print_task_states()` to report system task status.
+
+### Parameters
+- `pvParameters`: Not used, included to match FreeRTOS task function signature.
+
+### Behavior
+- Every 10 seconds, prints system task status using `print_task_states()`.
+- Prints a header and footer for clarity in output logs.
+
+### Role
+- Acts as a periodic system monitor task.
+- Useful for observing runtime task information over time.
+
+---
+
+## `void vTaskMonitorStates(void)`
+
+### Description
+Creates and starts the monitor task (`vMonitorTask`) that prints task states periodically.
+
+### Parameters
+- None.
+
+### Behavior
+- Uses `xTaskCreate()` to create a task named `"Monitor"`:
+  - Stack size: 1024 words
+  - Priority: Idle + 2
+- Checks the return value to verify successful creation.
+- Prints success or failure message accordingly.
+
+### Role
+- Initializes the system monitor feature.
+- Should be called once during system startup or initialization.
