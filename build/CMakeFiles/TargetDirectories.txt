@@ -1,0 +1,11 @@
+/home/mint/Desktop/FreeRTOS/FreeRTOS/Demo/Posix_GCC/build/CMakeFiles/posix_demo.dir
+/home/mint/Desktop/FreeRTOS/FreeRTOS/Demo/Posix_GCC/build/CMakeFiles/edit_cache.dir
+/home/mint/Desktop/FreeRTOS/FreeRTOS/Demo/Posix_GCC/build/CMakeFiles/rebuild_cache.dir
+/home/mint/Desktop/FreeRTOS/FreeRTOS/Demo/Posix_GCC/build/FreeRTOS-Kernel/CMakeFiles/freertos_kernel.dir
+/home/mint/Desktop/FreeRTOS/FreeRTOS/Demo/Posix_GCC/build/FreeRTOS-Kernel/CMakeFiles/edit_cache.dir
+/home/mint/Desktop/FreeRTOS/FreeRTOS/Demo/Posix_GCC/build/FreeRTOS-Kernel/CMakeFiles/rebuild_cache.dir
+/home/mint/Desktop/FreeRTOS/FreeRTOS/Demo/Posix_GCC/build/FreeRTOS-Kernel/include/CMakeFiles/edit_cache.dir
+/home/mint/Desktop/FreeRTOS/FreeRTOS/Demo/Posix_GCC/build/FreeRTOS-Kernel/include/CMakeFiles/rebuild_cache.dir
+/home/mint/Desktop/FreeRTOS/FreeRTOS/Demo/Posix_GCC/build/FreeRTOS-Kernel/portable/CMakeFiles/freertos_kernel_port.dir
+/home/mint/Desktop/FreeRTOS/FreeRTOS/Demo/Posix_GCC/build/FreeRTOS-Kernel/portable/CMakeFiles/edit_cache.dir
+/home/mint/Desktop/FreeRTOS/FreeRTOS/Demo/Posix_GCC/build/FreeRTOS-Kernel/portable/CMakeFiles/rebuild_cache.dir
